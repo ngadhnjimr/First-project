@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROJECT - HTML & CSS </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <section class="head-page">
+    <section class="head-page" id="head">
    
             <header class="header">
-               <div class="logo"> 
+               <div class="logo"> <a href="project.html">
                     <img src="assets/images/logo.png" width="75px" alt="" class="logo1">
-                    <img src="assets/images/logo2.png" width="200px" alt="" class="logo2">
+                    <img src="assets/images/logo2.png" width="200px" alt="" class="logo2"></a>
                 </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="nav-link"><a href="#">HOME</a></li>
-                    <li class="nav-link"><a href="#">SERVICE</a></li>
-                    <li class="nav-link"><a href="#">ABOUT</a></li>
-                    <li class="nav-link"><a href="#">CONTACT</a></li>
+                    <li class="nav-link"><a href="#head">HOME</a></li>
+                    <li class="nav-link"><a href="#main">SERVICE</a></li>
+                    <li class="nav-link"><a href="#about-part">ABOUT</a></li>
+                    <li class="nav-link"><a href="#contact-part">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
@@ -49,7 +49,7 @@
     
 
 </section>
-<section class="main-page">
+<section class="main-page" id="main">
         <div class="our-service-title">
             <h1 class="our-services">Our courses</h1>
         </div>
@@ -150,7 +150,7 @@
       </div>
 </section>
 
-<section class="about">
+<section class="about" id="about-part">
     <div class="feedbacks">
         <h2 class="feedback">Client say about us!</h2>
     </div>
@@ -179,7 +179,7 @@
 
 </section>
 
-<section class="contact">
+<section class="contact" id="contact-part">
    <h1>Contact Us</h1> 
   <form action="" class="container-contact">
     <div class="contact-form">
@@ -233,7 +233,7 @@
          </p>
     </div>
 
-
+    
     <div class="contact-social">
 
         <h2>Contact Information</h2>
@@ -253,8 +253,11 @@
                 <li><a href="#"><img src="assets/images/logo-twitter.svg" alt=""></a></li>
             </ul>
         </div>
+        
     </div>
+    
   </form>
+  <a href="#" class="top">Back to Top &#8593;</a>
 </section>
 
 </body>
