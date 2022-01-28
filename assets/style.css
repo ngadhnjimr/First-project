@@ -933,9 +933,9 @@ width: 100%;}
         letter-spacing: 1.15;
     }
     .feedbacks .feedback {
-        font-size: 22px;
+        font-size: 38px;
         margin-top: 60px;
-        margin-left: 30px;
+        margin-left: 10px;
         height: 20%;
     }
     .container-image img {
@@ -1091,3 +1091,154 @@ width: 100%;}
         bottom: 50px;
     }
 } 
+/*Large Deskopts landscape*/
+@media screen and (min-width: 1600px)  and (orientation:landscape){
+    .main-container-text h1 {
+        font-size: 50px;
+        text-align: left;
+        margin-bottom: 30px;
+        margin-top: 55px;
+    }
+    .header{
+        width: 100%;
+    }
+    .head-page{
+        width: 80%;
+    }
+
+    .header .logo .logo1 {
+        width: 85px;
+    }
+    .header .logo .logo2 {
+        width: 240px;
+    }
+    .main-container-text p {
+        font-size: 28px;
+        line-height: 1.8;
+        letter-spacing: 1.2;
+        margin-bottom: 40px;
+    }
+    .main-container-text{
+        width: 40%;
+    }
+    .main-container-img{
+        width: 60%;
+        margin: 150px 0px 0px 0px;
+    }
+    .main-img {
+        width: 80%;
+        float: right;
+    }
+    
+    
+    .nav-list{
+        gap:2rem;
+    }
+    .nav-link a{
+        font-size: 20px;
+    }
+
+    .feedbacks .feedback {
+        font-size: 44px;
+    }
+    .container-image{
+        width: 85%;
+        margin-top: 60px;
+    }
+    .container-text .feedback-2 {
+        font-size: 40px;
+    }
+    .container-text p {
+        font-size: 26px;
+        line-height: 1.8;
+        margin-bottom: 100px;
+    }
+    .container-image img {
+        bottom: 50px;
+    }  
+    .main-page{
+        width: 80%;
+    }
+    .our-service-title h1 {
+        text-align: center;
+        color: #3e3c56;
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, minmax(100px, min-content));
+        height: 80vh;
+        width: 70%;
+        gap:120px;
+        text-align: center;
+        color: #fff;
+        box-sizing: border-box;
+        margin: 0px auto;    }
+
+    .courses .frontend, .courses .backend, .courses .java, .courses .devops, .courses .networking, .courses .oop {
+        background-color: #e9ecef;
+        width: 90%;
+        height: 98%;
+        /* border: 2px solid #fff; */
+        border-radius: 25px;
+        /* margin: 0px auto 0px auto; */
+    }
+    .about{
+        width: 80%;
+    }
+
+    .contact{
+        width: 80%;
+    }
+}
+/*Large Deskopts portrait*/
+
+@media screen and (min-width: 1023px)  and (orientation:portrait){
+.head-page{
+    height: 80vh;
+}
+.about{
+    height: 60vh;
+}
+.contact{
+    height: 50vh;
+}
+.main-page{
+    height: 60vh;
+}
+.container-image img {
+    width: 100%;
+    position: absolute;
+    bottom: 35%;
+    top: -200px;
+    right: 45%;
+}
+}
+/*Large Deskopts portrait*/
+
+@media screen and (min-width: 1079px)  and (orientation:portrait){
+    .head-page{
+        height: 70vh;
+    }
+    .about{
+        height: 50vh;
+    }
+    .contact{
+        height: 50vh;
+    }
+    .main-page{
+        height: 40vh;
+    }
+    .container-image img {
+        width: 100%;
+        position: absolute;
+        bottom: 35%;
+        top: -250px;
+        right: 45%;
+    }
+    }
+    
+
