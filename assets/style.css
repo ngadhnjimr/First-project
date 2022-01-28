@@ -3,6 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{scroll-behavior: smooth;}
+body {
+    /* display: grid; */
+    grid-template-columns: auto 0px; 
+  }
+  /*----------------------------------------------------------------------*/
+  .top {
+    --offset: 50px; 
+    
+    position: sticky;
+    bottom: 20px;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(120vh + var(--offset));
+    
+    /* visual styling */
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+  /*-----------------------------------------------------------------------*/
+
+
 a{text-decoration: none;
 color: #3d257e;}
 body{
@@ -44,6 +72,12 @@ div.logo{
     text-decoration:none;
     color: #fff;
     font-family: 'Inter', roboto;
+}
+.nav-link a:hover{
+    background-color: #F55946;
+    border-radius: 10px;
+    padding: 5px 10px;
+    
 }
 
 
@@ -299,9 +333,9 @@ div.container-text{
 
 
 .contact{
-    height: 80vh;
+    height: 130vh;
     width: 100%;
-    /* background-color: #F55946; */
+   
 }
 .contact h1{
     color: #3e3c56;
@@ -439,8 +473,11 @@ margin: 0px auto;}
       flex-wrap: wrap;
       justify-content: space-around;
       
-
+      
     /* First Page */
+  }
+  .head-page .header .logo .logo1{
+      width: 50px;
   }
   .main-container-img{
       width: 75%;
@@ -741,8 +778,8 @@ width: 100%;}
 @media screen and (min-width: 600px)  and (orientation:portrait){
   
     /* Head PART*/
-    .main{
-        height: 100vh;
+    .main-page{
+        height: 80vh;
     }
    .fix-position{
        height: 80vh;
@@ -761,7 +798,7 @@ width: 100%;}
     .header .logo .logo1{
         width: 40px;
     }.header .logo .logo2{
-      width: 190px;
+      width: 150px;
   }
   .nav-link a{
       font-size: 16px;
@@ -839,7 +876,7 @@ width: 100%;}
                 margin: 0px auto;
             }
         .courses{
-            gap: 85px;
+            gap: 35px;
             height: auto;
             
                 display: grid;
@@ -854,6 +891,9 @@ width: 100%;}
         }
 
         /* ABOUT PART*/
+        .about {
+            height: 90vh;}
+
         .container-text .feedback-2, .container-text .client {
             font-size: 28px;
             letter-spacing: -1px;
@@ -877,6 +917,9 @@ width: 100%;}
 
             
         }
+        .container-image img{
+        top: -100%;}
+
         .container-text .feedback-2{
             margin-top: 80px;
         }
@@ -899,7 +942,6 @@ width: 100%;}
         margin-bottom: 35px;
     }
     .main-container-img {
-        margin-top: 60px;
         width: 50%;
     }
     .main-container-text {
@@ -909,7 +951,7 @@ width: 100%;}
     .our-service-title h1 {
         text-align: center;
         color: #3e3c56;
-        font-size: 30px;
+        font-size: 38px;
         margin-bottom: 15px;
     }
     .courses {
@@ -950,6 +992,9 @@ width: 100%;}
         font-size: 44px;
         text-align: center;
         margin-bottom: 45px;
+    }
+    .main-page{
+        height: 90vh;
     }
 
     .header .logo .logo1 {
@@ -1030,13 +1075,15 @@ width: 100%;}
         margin-bottom: 30%;
     }
     .container-image{
-        width: 350px;
-    }
+        position: relative;
+        left: 100%;
+        width: 100%;
+        margin-left: 50%;
+        margin-bottom: 20%;
+        top: -200px;    }
     .container-image img {
         width: 100%;
-        position: absolute;
-        bottom: 35%;
-        right:45%;
+    margin-top: 50px;
     }
 
 }
@@ -1051,7 +1098,7 @@ width: 100%;}
     }
 
     .header .logo .logo1 {
-        width: 85px;
+        width: 65px;
     }
     .header .logo .logo2 {
         width: 240px;
@@ -1191,8 +1238,12 @@ width: 100%;}
     }
 
     .contact{
+        height: 100vh;
         width: 80%;
     }
+    /* .top{
+        margin-left: 50px;
+    } */
 }
 /*Large Deskopts portrait*/
 
@@ -1213,7 +1264,6 @@ width: 100%;}
     width: 100%;
     position: absolute;
     bottom: 35%;
-    top: -200px;
     right: 45%;
 }
 }
