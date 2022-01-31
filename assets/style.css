@@ -483,8 +483,16 @@ margin: 0px auto;}
       width: 75%;
       margin: 0px auto;
   }
+  .main-img{
+      width: 80%;
+  }
+  .main-container-text p {
+   text-align: center;
+    margin-bottom: 35px;
+}
   .main-container-img p{
-      text-align: center;
+    display: block;
+    margin: 0px auto;
   }
   .main-container-text{
     font-size: 14px;
@@ -492,14 +500,22 @@ margin: 0px auto;}
   }
   .main-container-text h1{
       font-size: 28px;
+      text-align: center;
   }     
    .main-container-text a {margin:0px 20px 0px 30px;
     padding: 10px 15px;
     margin-bottom: 0px;}
 
-    .center-button{
+    /* .center-button{
         display: inline;
-        text-align: center;    }
+        text-align: center;    } */
+        
+        .our-service-title h1 {
+            text-align: center;
+            color: #3e3c56;
+            font-size: 36px;
+            margin-bottom: 25px;
+        }
 
  /* NAVIGATION */
   .nav ul{
@@ -511,6 +527,7 @@ margin: 0px auto;}
       .main-page{
           height: auto;
       }    
+      
       .main-page .courses{
           display: flex;
           flex-wrap: wrap;
@@ -556,6 +573,16 @@ margin: 0px auto;}
 
       }
 
+      /*About*/
+      .feedbacks{
+        grid-column: 1/4;
+        grid-row: 1/2;
+      }
+      .feedbacks .feedback{
+          font-size: 30px;
+         text-align: center;
+      }
+
 
       /* ------------------------------------CONTACT PART*/
 
@@ -589,6 +616,7 @@ width: 100%;}
 
     #fname, #lname, #email, #phone{
         height: 140%;
+        
     }
    
    
@@ -612,6 +640,10 @@ width: 100%;}
     .contact .contact-social h2{
         font-size: 26px;
         text-align: center;
+    }
+    .contact h1{
+        font-size: 30px;
+        margin: 20px;
     }
     
         
@@ -657,6 +689,11 @@ width: 100%;}
             margin: 0px 20px;
             }
 /* MAIN PART*/
+.main-page {
+    height: 120vh;
+    width: 100%;
+    background-color: #fff;
+}
         .courses .frontend ul, .courses .backend ul, .courses .java ul, .courses .devops ul, .courses .networking ul, .courses .oop ul {
                 display: block;
                 background-color: #e9ecef;
@@ -717,8 +754,8 @@ width: 100%;}
   .feedbacks {
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-top: 70px;}
-
+    /* margin-top: 70px; */
+}
     .feedbacks .feedback {
         font-size: 22px;
        margin-top: 60px;
@@ -744,6 +781,10 @@ width: 100%;}
                 letter-spacing: -1px;
                 color: #f3f2f3;
                 margin-bottom: 15px;}
+                
+                .container-text{
+                    margin-top: 0px;
+                }
 
 /*CONTACT PART --------------------------------------------------------*/
 .contact h1 {
@@ -815,7 +856,7 @@ width: 100%;}
   .main-container-img .main-img{
       display: block;
     margin: -40px auto;
-    width: 70%;
+    width: 60%;
       
   }
 
@@ -924,13 +965,14 @@ width: 100%;}
             margin-top: 80px;
         }
         .container-text p{
-            font-size: 16px;
+            font-size: 18px;
             margin-bottom: 30%;
         }
 }
 /*Tablet Large -- LANDSCAPE*/
-  @media screen and (min-width: 1023px)  and (orientation:landscape){  */
+  @media screen and (min-width: 1023px)  and (orientation:landscape){  
     
+   
     .main-container-text h1 {
         font-size: 30px;
         margin-bottom: 35px;
@@ -988,6 +1030,11 @@ width: 100%;}
 }  
 /*Tablet Large - PORTRAIT*/
 @media screen and (min-width: 767px)  and (orientation:portrait){
+    .contact {
+        height: 100vh;
+        width: 100%;
+        
+    }
     .main-container-text h1 {
         font-size: 44px;
         text-align: center;
@@ -1086,6 +1133,7 @@ width: 100%;}
     margin-top: 50px;
     }
 
+    
 }
 
 /*Laptop/Desktop > */
@@ -1151,6 +1199,7 @@ width: 100%;}
     }
     .head-page{
         width: 80%;
+        height: 90vh;
     }
 
     .header .logo .logo1 {
@@ -1205,6 +1254,7 @@ width: 100%;}
     }  
     .main-page{
         width: 80%;
+        height: 90vh;
     }
     .our-service-title h1 {
         text-align: center;
@@ -1235,6 +1285,7 @@ width: 100%;}
     }
     .about{
         width: 80%;
+        height: 80vh;
     }
 
     .contact{
