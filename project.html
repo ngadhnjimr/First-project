@@ -7,10 +7,20 @@
     <title>PROJECT - HTML & CSS </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
+    <script defer src="app.js"></script>
+
+    <style>
+ 
+
+  </style>
 </head>
 <body>
+
+
     <section class="head-page" id="head">
    
             <header class="header">
@@ -21,8 +31,8 @@
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-link"><a href="#head">HOME</a></li>
-                    <li class="nav-link"><a href="#main">SERVICE</a></li>
-                    <li class="nav-link"><a href="#about-part">ABOUT</a></li>
+                    <li class="nav-link"><a href="#main-part">SERVICE</a></li>
+                    <li class="nav-link"><a href="#about">ABOUT</a></li>
                     <li class="nav-link"><a href="#contact-part">CONTACT</a></li>
                 </ul>
             </nav>
@@ -34,7 +44,7 @@
                 <p class="img-center"><img src="assets/images/foto1.svg"  alt="" class="main-img"></p>
              </div> 
              <div class="main-container-text">      
-                <h1>Code / Program Developer </h1>
+                <h1 style="color: white;">Code / Program Developer </h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi porro minus delectus, provident adipisci dicta, omnis voluptate sit accusantium pariatur voluptas! Molestias doloribus laborum tenetur pariatur repellat voluptates. Pariatur, quisquam!</p>
                 <p class="center-button">
                     <a href="#">SIGN IN</a>
@@ -46,228 +56,897 @@
         <div class="clear"></div>
         
     </main>
+    </section>
     
+ 
+ <section class="main" id="main-part">
+   <h1 class="h1-title">Our Courses</h1>
+    <div class="card-container">
 
-</section>
-<section class="main-page" id="main">
-        <div class="our-service-title">
-            <h1 class="our-services">Our courses</h1>
+      <div class="card">
+        <div class="card__inner">
+          <div class="card__face card__face--front">
+            <div class="card__header">
+            <div class="card__picture">
+             <div class="card__picture-overlay">&nbsp;</div>
+              <img
+              src="assets/images/bootstrap.jpg"
+              alt="Tour 1"
+              class="card__picture-img"/>
+             </div>
+
+          <h3 class="heading-title">
+            <span>Frontend Part Module</span>
+          </h3>
         </div>
-        
-      <div class="courses">
-          <div class="course frontend">
-            <div class="circle">
-                <h2>WEB I - Frontend Module</h2>
-                
-            </div>
-            <div class="technologies"> <ul>
-                <li>HTML</li>
-                <li>CSS & SASS</li>
-                <li>BOOTSTRAP</li>
-                <li>JAVASCRIPT</li>
-                <li>REACT</li>
-              
-            </ul></div>
-            <a href="">Read more</a>
+
+        <div class="card__details">
+          <h4 class="card__sub-heading">6 month bootcamp</h4>
+          <p class="card__text">
+            Take it slow it's a marathon, not a sprint!
+          </p>
+          <div class="card__data">
+            <svg class="card__icon">
+              <use xlink:href="assets/icons.svg#icon-map-pin"></use>
+            </svg>
+            <span>Prishtine, Kosova</span>
           </div>
-
-          <div class="course backend" >
-              <div class="circle">
-                <h2> WEB  II - Backend Module </h2>
-              </div>
-              <div class="technologies"><ul>
-                <li>PHP</li>
-                <li>MYSQL, MongoDB</li>
-                <li>NODE JS</li>
-                <li>LARAVEL</li>
-                <li>OOP PHP</li>
-                
-            </ul>
-        </div>
-            <a href="">Read more</a>
+          <div class="card__data">
+            <svg class="card__icon">
+              <use xlink:href="assets/icons.svg#icon-calendar"></use>
+            </svg>
+            <span>April 2021</span>
           </div>
-
-          <div class="course java">
-              <div class="circle">
-                <h2>Java & Android Module</h2>
-              </div>
-              <div class="technologies"><ul>
-                <li>JAVA BASICS</li>
-                <li>JAVA OOP</li>
-                <li>JAVA & MYSQL</li>
-                <li>SPRING</li>
-                <li>ANDROID STUDIO</li>
-               
-            </ul>
-        </div>
-            <a href="">Read more</a>
+          <div class="card__data">
+            <svg class="card__icon">
+              <use xlink:href="assets/icons.svg#icon-flag"></use>
+            </svg>
+            <span>3 times per week</span>
           </div>
-
-          <div class="course devops">
-              <div class="circle">
-                <h2>Devops Module</h2>
-              </div>
-              <div class="technologies"><ul>
-                <li>LINUX</li>
-                <li>BASH SCRIPTING</li>
-                <li>AWS</li>
-                <li>DOCKER</li>
-                <li>KUBERNETES</li>
-            </ul>
-        </div>
-            <a href="">Read more</a>
+          <div class="card__data">
+            <svg class="card__icon">
+              <use xlink:href="assets/icons.svg#icon-user"></use>
+            </svg>
+            <span>70 people </span>
           </div>
-
-        <div class="course networking" >
-            <div class="circle">
-                <h2> Networking Module </h2>
-            </div>
-            <div class="technologies"><ul>
-                <li>ITN</li>
-                <li>SWITCHING</li>
-                <li>ROUTING</li>
-                <li>WIRELESS BASICS</li>
-                <li>CISCO PT</li>
-            </ul>
         </div>
-            <a href="">Read more</a>
-         </div>
 
-        <div class="course oop">
-            <div class="circle">
-                <h2>Coming soon</h2>
-            </div>
-            <div class="technologies"><ul>
-                <li>NULL</li>
-                <li>NULL</li>
-                <li>NULL</li>
-                <li>NULL</li>
-                <li>NULL</li>
-            </ul>
-        </div>
-            <a href="">Read more</a>
+        <div class="card__footer">
+          <p>
+            <span class="card__footer-value">$297</span>
+            <span class="card__footer-text">per person</span>
+          </p>
+          <p class="card__ratings">
+            <span class="card__footer-value">4.9</span>
+            <span class="card__footer-text">rating (21)</span>
+          </p>
         </div>
       </div>
-</section>
 
-<section class="about" id="about-part">
-    <div class="feedbacks">
-        <h2 class="feedback">Client say about us!</h2>
-    </div>
-    <div class="container-text">
-        <!-- <h2 class="feedback">Client say about us!</h2> -->
-
-        
-      <div class="parapgraph-align">   
-          <h1 class="feedback-2">"Lorem ipsum doloremque"</h1>
-       
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti quidem, ratione odio cum ipsa necessitatibus impedit praesentium perferendis tenetur soluta. Possimus molestias odio accusantium. Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, veniam.</p>
-            
-        </div>   
-        <div class="client">
-                <h2>John Doe</h2>
-                <p>Managing Director, <br /> <strong> Lorem ipsum</strong></p>
-            </div>
-    
-    </div>
-    
-    <div class="container-image">
-        <img src="assets/images/client.png "  alt="Client">
-    </div>
-    
-    
-
-</section>
-
-<section class="contact" id="contact-part">
-   <h1>Contact Us</h1> 
-  <form action="" class="container-contact">
-    <div class="contact-form">
-        <!-- 1 step to back -->
-        <div class="grid-center">
-        <div class="fname">
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" >
-            
-        </div >
-        <div class="lname">
-            <span  class="lname-indent"><label for="lname ">Last Name:</label></span>
-            <input type="text" id="lname">
+      <div class="card__face card__face--back">
+        <div class="card__content">
+          <div class="card__header">
+           
+            <h2>Course content</h2>
+          </div>
+          <div class="card__body">
+            <ul class="course-technologies">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SaSS</li>
+            <li>BOOTSTRAP</li>
+            <li>JS</li>
+            <li>jQuery</li>
+            <li>VUE</li>
+            <li>REACT</li>
+            <li>ANGULAR</li>
+          </ul>
+          </div>
         </div>
+      </div>
+    </div>
+    </div>
+        
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          <div class="card__header">
+          <div class="card__picture">
+           <div class="card__picture-overlay">&nbsp;</div>
+            <img
+            src="assets/images/bootstrap.jpg"
+            alt="Tour 1"
+            class="card__picture-img"/>
+           </div>
 
+        <h3 class="heading-title">
+          <span>Backend Part Module</span>
+        </h3>
+      </div>
 
-        <div class="mail">
-            <label for="email">Email:</label>
-            <input type="email" id="email" >
+      <div class="card__details">
+        <h4 class="card__sub-heading">6 month bootcamp</h4>
+    <p class="card__text">
+      Take it slow it's a marathon, not a sprint!
+    </p>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-map-pin"></use>
+      </svg>
+      <span>Prishtine, Kosova</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-calendar"></use>
+      </svg>
+      <span>April 2021</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-flag"></use>
+      </svg>
+      <span>3 times per week</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-user"></use>
+      </svg>
+      <span>70 people </span>
+        </div>
+      </div>
+
+      <div class="card__footer">
+        <p>
+          <span class="card__footer-value">$297</span>
+          <span class="card__footer-text">per person</span>
+        </p>
+        <p class="card__ratings">
+          <span class="card__footer-value">4.9</span>
+          <span class="card__footer-text">rating (21)</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="card__face card__face--back">
+      <div class="card__content">
+        <div class="card__header">
+         
+          <h2>Course Content</h2>
+        </div>
+        <div class="card__body">
+          <ul class="course-technologies">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SaSS</li>
+            <li>BOOTSTRAP</li>
+            <li>JS</li>
+            <li>jQuery</li>
+            <li>VUE</li>
+            <li>REACT</li>
+            <li>ANGULAR</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+      
+  <div class="card">
+    <div class="card__inner">
+      <div class="card__face card__face--front">
+        <div class="card__header">
+        <div class="card__picture">
+         <div class="card__picture-overlay">&nbsp;</div>
+          <img
+          src="assets/images/bootstrap.jpg"
+          alt="Tour 1"
+          class="card__picture-img"/>
          </div>
-         <div class="phone">
-            <span class="phone-indent"><label for="phone ">Phone:</label></span>
-            <input type="tel" id="phone">
-            
-         </div >
-        </div>
 
-        <p class="question-about">What course do you want to ask about?</p>
-        <div class="what-course">
-            <input type="checkbox" id="web1" >
-            <label for="web1">Web I</label>
-            <input type="checkbox" id="web2">
-            <label for="web2">Web II</label>
-            <input type="checkbox" id="java" >
-            <label for="java">Java</label>
-            <input type="checkbox" id="devops">
-            <label for="devops" class="devops">Devops</label>
-            <input type="checkbox" id="networking" >
-            <label for="networking">Networking</label>
+      <h3 class="heading-title">
+        <span>Java Part Module</span>
+      </h3>
+    </div>
+
+    <div class="card__details">
+      <h4 class="card__sub-heading">6 month bootcamp</h4>
+    <p class="card__text">
+      Take it slow it's a marathon, not a sprint!
+    </p>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-map-pin"></use>
+      </svg>
+      <span>Prishtine, Kosova</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-calendar"></use>
+      </svg>
+      <span>April 2021</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-flag"></use>
+      </svg>
+      <span>3 times per week</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-user"></use>
+      </svg>
+      <span>70 people </span>
+      </div>
+    </div>
+
+    <div class="card__footer">
+      <p>
+        <span class="card__footer-value">$297</span>
+        <span class="card__footer-text">per person</span>
+      </p>
+      <p class="card__ratings">
+        <span class="card__footer-value">4.9</span>
+        <span class="card__footer-text">rating (21)</span>
+      </p>
+    </div>
+  </div>
+
+  <div class="card__face card__face--back">
+    <div class="card__content">
+      <div class="card__header">
+       
+        <h2>Test</h2>
+      </div>
+      <div class="card__body">
+        <h3>JavaScript Wizard</h3>
+        <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    
+<div class="card">
+  <div class="card__inner">
+    <div class="card__face card__face--front">
+      <div class="card__header">
+      <div class="card__picture">
+       <div class="card__picture-overlay">&nbsp;</div>
+        <img
+        src="assets/images/bootstrap.jpg"
+        alt="Tour 1"
+        class="card__picture-img"/>
+       </div>
+
+    <h3 class="heading-title">
+      <span>Networking Part Module</span>
+    </h3>
+  </div>
+
+  <div class="card__details">
+    <h4 class="card__sub-heading">6 month bootcamp</h4>
+    <p class="card__text">
+      Take it slow it's a marathon, not a sprint!
+    </p>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-map-pin"></use>
+      </svg>
+      <span>Prishtine, Kosova</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-calendar"></use>
+      </svg>
+      <span>April 2021</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-flag"></use>
+      </svg>
+      <span>3 times per week</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-user"></use>
+      </svg>
+      <span>70 people </span>
+    </div>
+  </div>
+
+  <div class="card__footer">
+    <p>
+      <span class="card__footer-value">$397</span>
+      <span class="card__footer-text">per person</span>
+    </p>
+    <p class="card__ratings">
+      <span class="card__footer-value">4.9</span>
+      <span class="card__footer-text">rating (100)</span>
+    </p>
+  </div>
+</div>
+
+<div class="card__face card__face--back">
+  <div class="card__content">
+    <div class="card__header">
+     
+      <h2>Test</h2>
+    </div>
+    <div class="card__body">
+      <h3>JavaScript Wizard</h3>
+      <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+  
+<div class="card">
+  <div class="card__inner">
+    <div class="card__face card__face--front">
+      <div class="card__header">
+      <div class="card__picture">
+       <div class="card__picture-overlay">&nbsp;</div>
+        <img
+        src="assets/images/bootstrap.jpg"
+        alt="Tour 1"
+        class="card__picture-img"/>
+       </div>
+
+    <h3 class="heading-title">
+      <span>Devops Part Module</span>
+    </h3>
+  </div>
+
+  <div class="card__details">
+    <h4 class="card__sub-heading">6 month bootcamp</h4>
+    <p class="card__text">
+      Take it slow it's a marathon, not a sprint!
+    </p>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-map-pin"></use>
+      </svg>
+      <span>Prishtine, Kosova</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-calendar"></use>
+      </svg>
+      <span>April 2021</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-flag"></use>
+      </svg>
+      <span>3 times per week</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-user"></use>
+      </svg>
+      <span>70 people </span>
+    </div>
+  </div>
+
+  <div class="card__footer">
+    <p>
+      <span class="card__footer-value">$297</span>
+      <span class="card__footer-text">per person</span>
+    </p>
+    <p class="card__ratings">
+      <span class="card__footer-value">4.9</span>
+      <span class="card__footer-text">rating (21)</span>
+    </p>
+  </div>
+</div>
+
+<div class="card__face card__face--back">
+  <div class="card__content">
+    <div class="card__header">
+     
+      <h2>Test</h2>
+    </div>
+    <div class="card__body">
+      <h3>JavaScript Wizard</h3>
+      <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+  
+<div class="card">
+  <div class="card__inner">
+    <div class="card__face card__face--front">
+      <div class="card__header">
+      <div class="card__picture">
+       <div class="card__picture-overlay">&nbsp;</div>
+        <img
+        src="assets/images/bootstrap.jpg"
+        alt="Tour 1"
+        class="card__picture-img"/>
+       </div>
+
+    <h3 class="heading-title">
+      <span>Scratching Part Module</span>
+    </h3>
+  </div>
+
+  <div class="card__details">
+    <h4 class="card__sub-heading">6 month bootcamp</h4>
+    <p class="card__text">
+      Take it slow it's a marathon, not a sprint!
+    </p>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-map-pin"></use>
+      </svg>
+      <span>Prishtine, Kosova</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-calendar"></use>
+      </svg>
+      <span>April 2021</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-flag"></use>
+      </svg>
+      <span>3 times per week</span>
+    </div>
+    <div class="card__data">
+      <svg class="card__icon">
+        <use xlink:href="assets/icons.svg#icon-user"></use>
+      </svg>
+      <span>70 people </span>
+    </div>
+  </div>
+
+  <div class="card__footer">
+    <p>
+      <span class="card__footer-value">$297</span>
+      <span class="card__footer-text">per person</span>
+    </p>
+    <p class="card__ratings">
+      <span class="card__footer-value">4.9</span>
+      <span class="card__footer-text">rating (21)</span>
+    </p>
+  </div>
+</div>
+
+<div class="card__face card__face--back">
+  <div class="card__content">
+    <div class="card__header">
+     
+      <h2>Test</h2>
+    </div>
+    <div class="card__body">
+      <h3>JavaScript Wizard</h3>
+      <p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+      </div>
+    </div>
+
+    <section class="section" id="about">
+      
+
+      <div class="slider">
+        <div class=" slide " style="transform: translateX(0%);">
+          <div class="testimonial">
+            <div class="feedbacks">
+              <h2 class="feedback">Client say about us!</h2>
+          </div>
+          <div class="container-text">
+      
+              
+            <div class="parapgraph-align">   
+                <h1 class="feedback-2 " style="color:white">"Lorem ipsum doloremque"</h1>
+             
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti quidem, ratione odio cum ipsa necessitatibus impedit praesentium perferendis tenetur soluta. Possimus molestias odio accusantium. Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, veniam.</p>
+                  
+              </div>   
+              <div class="client">
+                      <h2>John Doe</h2>
+                      <p>Managing Director</p>
+                  </div>
           
-       </div >
+          </div>
+          
+          <div class="container-image">
+              <img src="assets/images/client.png" width="105px"  alt="Client">
+          </div>
+            
+          </div>
+        </div>
 
-       <div class="message-us">
-           <label style="margin-top: 40px; margin-bottom: 0px;" for="message-about">Message:</label>
-       </div>
-       <div>  
-             <textarea name="message" id="message-about"   class=" message-us message-align"></textarea>
-       </div>
-            <p class="btn-send">
-             <a href="" class="button">Send Message</a>
-         </p>
-    </div>
+        <div class="slide" style="transform: translateX(100%);">
+          <div class="testimonial">
+            <div class="feedbacks">
+              <h2 class="feedback">Client say about us!</h2>
+          </div>
+          <div class="container-text">
+      
+              
+            <div class="parapgraph-align">   
+                <h1 class="feedback-2">"Lorem ipsum doloremque"</h1>
+             
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti quidem, ratione odio cum ipsa necessitatibus impedit praesentium perferendis tenetur soluta. Possimus molestias odio accusantium. Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, veniam.</p>
+                  
+              </div>   
+              <div class="client">
+                      <h2>John Doe</h2>
+                      <p>Managing Director</p>
+                  </div>
+          
+          </div>
+          
+          <div class="container-image">
+              <img src="assets/images/client2.jpg"   alt="Client">
+          </div>
+          </div>
+        </div>
+
+        <div class="slide" style="transform: translateX(200%);">
+          <div class="testimonial">
+            <div class="feedbacks">
+              <h2 class="feedback">Client say about us!</h2>
+          </div>
+          <div class="container-text">
+      
+              
+            <div class="parapgraph-align">   
+                <h1 class="feedback-2">"Lorem ipsum doloremque"</h1>
+             
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti quidem, ratione odio cum ipsa necessitatibus impedit praesentium perferendis tenetur soluta. Possimus molestias odio accusantium. Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, veniam.</p>
+                  
+              </div>   
+              <div class="client">
+                      <h2>John Doe</h2>
+                      <p>Managing Director</p>
+                  </div>
+          
+          </div>
+          
+          <div class="container-image">
+              <img src="assets/images/client3.jpg"   alt="Client">
+          </div>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
 
     
-    <div class="contact-social">
 
-        <h2>Contact Information</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, magnam!</p>
-        <div class="contact-info">
-            <ul class="contact-info-list">
-                <li><a href="#"><img src="assets/images/call.svg" alt=""><span>+012 345 678</span></a></li>
-                <li><a href="#"><img src="assets/images/mail.svg" alt=""><span> hello@hotmail.com</span></a></li>
-                <li><a href="#"><img src="assets/images/navigate.svg" alt=""><span> 102 Street X-Town</span></a></li>
-            </ul>
+    </section>
+
+
+ </section>
+
+
+
+
+    <section class="testimonials" id="testimonals-part"> 
+      <h1 style="font-size: 38px; text-align: center; margin-top: 35px; margin-bottom: 0; color: black;">Job hunters that succeeded</h1>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1" >
+            <span>01</span>Frontend
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Backend
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Java
+          </button>
+          <button class="btn operations__tab operations__tab--4" data-tab="4">
+            <span>04</span>Networking
+          </button>
+          <button class="btn operations__tab operations__tab--5" data-tab="5">
+            <span>05</span>Devops
+          </button>
+          <button class="btn operations__tab operations__tab--6" data-tab="6">
+            <span>06</span>Scratching
+          </button>
         </div>
-        <div class="social-info">
-            <ul id="social-info">
-                <li><a href="#"><img src="assets/images/logo-facebook.svg" alt=""></a></li>
-                <li><a href="#"><img src="assets/images/logo-instagram.svg" alt=""></a></li>
-                <li><a href="#"><img src="assets/images/logo-linkedin.svg" alt=""></a></li>
-                <li><a href="#"><img src="assets/images/logo-twitter.svg" alt=""></a></li>
-            </ul>
-        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active" >
+          <div class="operations__icon operations__icon--1">
+            <img src="https://img.icons8.com/windows/64/000000/html-5.png"/>   </div>
+          <h5 class="operations__header">
+            Some words of our  successful students from Frontend module
+          </h5>
+          <br><br>
+          <div class="fix-div-content">
+          <figure style="width: 200px; background-color: azure;">
+            <blockquote cite="https://www.huxley.net/bnw/four.html">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis consectetur consequuntur sint!.</p>
+            </blockquote>
+            <figcaption>—Lorem , <cite>Lorem ipsum</cite></figcaption>
+        </figure>
+
+        <figure style="width: 200px; background-color: azure;">
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt exercitationem voluptatem laboriosam?.</p>
+          </blockquote>
+          <figcaption>—Lorem set, <cite>Pref deitis</cite></figcaption>
+      </figure>
+
+      <figure style="width: 200px; background-color: azure;">
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam pariatur reiciendis omnis?.</p>
+        </blockquote>
+        <figcaption>—Lorem ipsm, <cite>Deitis pref</cite></figcaption>
+    </figure>
+
         
-    </div>
-    
-  </form>
-  <a href="#" class="top">Back to Top &#8593;</a>
+      
+      </div>
+        
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <img src="https://img.icons8.com/ios/50/000000/php-logo.png"/>
+          </div>
+          <h5 class="operations__header">
+            Some words of our  successful students from Backend module
+          </h5>
+          <br><br>
+          <div class="fix-div-content" ">
+          <figure style="width: 200px; background-color: azure;">
+            <blockquote cite="https://www.huxley.net/bnw/four.html">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut eum enim facere similique aliquam..</p>
+            </blockquote>
+            <figcaption>—Lorem ipsum, <cite>Lorem</cite></figcaption>
+        </figure>
+
+        <figure style="width: 200px; background-color: azure;">
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate assumenda adipisci numquam eveniet, sed similique error?.</p>
+          </blockquote>
+          <figcaption>—Lorem, <cite>Deitis pref</cite></figcaption>
+      </figure>
+
+      <figure style="width: 200px; background-color: azure;">
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sequi inventore illo amet recusandae dolor, itaque similique!.</p>
+        </blockquote>
+        <figcaption>—Lorem ipsum, <cite>Lorem sit</cite></figcaption>
+    </figure>
+
+        
+      
+      </div>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <img src="https://img.icons8.com/ios-glyphs/60/000000/java-coffee-cup-logo.png"/>
+          </div>
+          <h5 class="operations__header">
+            Some words of our  successful students from Java module
+          </h5>
+          <br><br>
+          <div class="fix-div-content">
+          <figure style="width: 200px; background-color: azure;">
+            <blockquote cite="https://www.huxley.net/bnw/four.html">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dicta mollitia magnam nisi, ullam illo?.</p>
+            </blockquote>
+            <figcaption>—Lorem ipsum, <cite>Deites pref</cite></figcaption>
+        </figure>
+
+        <figure style="width: 200px; background-color: azure;">
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos tempore quidem, soluta deleniti quia ipsa dolorem nisi est!.</p>
+          </blockquote>
+          <figcaption>—Lorem deit, <cite>Lorem ipsm</cite></figcaption>
+      </figure>
+
+      <figure style="width: 200px; background-color: azure;">
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ducimus doloribus, deserunt voluptas fuga consequuntur?</p>
+        </blockquote>
+        <figcaption>—Lorem ipsum, <cite>Lorem sei</cite></figcaption>
+    </figure>
+
+        
+      
+      </div>
+        </div>
+
+        <div class="operations__content operations__content--4">
+          <div class="operations__icon operations__icon--4">
+            <img src="https://img.icons8.com/ios/64/000000/network--v1.png"/>
+          </div>
+          <h5 class="operations__header">
+            Some words of our  successful students from Networking module
+          </h5>
+          <br><br>
+          <div class="fix-div-content">
+          <figure style="width: 200px; background-color: azure;">
+            <blockquote cite="https://www.huxley.net/bnw/four.html">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nostrum, placeat dolor consequatur explicabo possimus?.</p>
+            </blockquote>
+            <figcaption>—Lorem ipsum, <cite>Lores aras</cite></figcaption>
+        </figure>
+
+        <figure style="width: 200px; background-color: azure;">
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi deserunt vel qui sunt voluptate laborum tenetur dolor?</p>
+          </blockquote>
+          <figcaption>—Lorem deit, <cite>Lorem ipsum</cite></figcaption>
+      </figure>
+
+      <figure style="width: 200px; background-color: azure;">
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam repellat corporis fugiat..</p>
+        </blockquote>
+        <figcaption>—Lorem ipsum, <cite>Deitis facillis</cite></figcaption>
+    </figure>
+
+        
+      
+      </div>
+        </div>
+
+        <div class="operations__content operations__content--5">
+          <div class="operations__icon operations__icon--5">
+            <img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-settings-statistical-analysis-flatart-icons-outline-flatarticons.png"/>
+          </div>
+          <h5 class="operations__header">
+            Some words of our  successful students from Devops module
+          </h5>
+          <br><br>
+          <div class="fix-div-content">
+          <figure style="width: 200px; background-color: azure;">
+            <blockquote cite="https://www.huxley.net/bnw/four.html">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis rem maxime doloribus! Quam, mollitia enim.</p>
+            </blockquote>
+            <figcaption>—Lorem ipsum, <cite>Offisia det</cite></figcaption>
+        </figure>
+
+        <figure style="width: 200px; background-color: azure;">
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, voluptates!.</p>
+          </blockquote>
+          <figcaption>—Lorem det, <cite>Lorem</cite></figcaption>
+      </figure>
+
+      <figure style="width: 200px; background-color: azure;">
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste enim ex animi aut, eum ipsa architecto?.</p>
+        </blockquote>
+        <figcaption>—Lorem ipsum, <cite>Lorem</cite></figcaption>
+    </figure>
+
+        
+      
+      </div>
+        </div>
+
+        <div class="operations__content operations__content--6">
+          <div class="operations__icon operations__icon--6">
+            <img src="https://img.icons8.com/ios/50/000000/programming-flag.png"/>
+          </div>
+          <h5 class="operations__header">
+            Some words of our  successful students from Scratch module
+          </h5>
+          <br><br>
+          <div class="fix-div-content">
+          <figure style="width: 200px; background-color: azure;">
+            <blockquote cite="https://www.huxley.net/bnw/four.html">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, voluptates!.</p>
+            </blockquote>
+            <figcaption>—Lorem ipsum, <cite>Offisia det</cite></figcaption>
+        </figure>
+
+        <figure style="width: 200px; background-color: azure;">
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, adipisci at. Perferendis amet.</p>
+          </blockquote>
+          <figcaption>—Lorem dolor., <cite>Perferendis</cite></figcaption>
+      </figure>
+
+      <figure style="width: 200px; background-color: azure;">
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis rem maxime doloribus! Quam, mollitia enim.</p>
+        </blockquote>
+        <figcaption>—Lorem ipsum, <cite> Officiis rem</cite></figcaption>
+    </figure>
+
+        
+      
+      </div>
+        </div>
+      </div>
+    </section>
+
+<section class="our-team " id="our-team-part">
+  <div class="team">
+
+  </div>
 </section>
+
+<section class="jokes">
+  <div class="joke-container">
+    <h1 class="joke-title">Wanna hear programming jokes?</h1>
+    <div class="joke" id="joke">
+      
+    </div>
+    <button class="btn2" id="jokeBtn">Try me!</button>
+  </div>
+</section>
+
+
+
+<section class="section-cta" id="contact-part">
+  <div class="container">
+    <h1 class="title">Contact us</h1>
+    <div class="cta">
+      
+      <div class="cta-text-box">
+        <h2 class="heading-secondary"> Grab your first course!</h2>
+       
+
+        <form class="cta-form" action="#">
+          <div>
+            <label for="full-name">Full Name</label>
+            <input
+              id="full-name"
+              type="text"
+              placeholder="John Smith"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Email address</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="me@example.com"
+              required
+            />
+          </div>
+          
+          <div>
+            <label for="select-where">What course you're interested for?</label>
+            <select id="select-where" required>
+              <option value="">Please choose one option:</option>
+              <option value="frontend">Frontend</option>
+              <option value="backend">Backend</option>
+              <option value="java">Java</option>
+              <option value="networking">Networking</option>
+              <option value="devops">Devops</option>
+              <option value="scratch">Scratch</option>
+
+            </select>
+          </div>
+          <div>
+            <textarea name="message-us" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+          </div>
+
+
+          <button class="btn btn--form">Submit</button>
+
+        </form>
+      </div>
+      
+  </div>
+</section>
+
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-   
