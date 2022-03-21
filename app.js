@@ -170,22 +170,146 @@ teamContainer.innerHTML = html;
 const jokeTxt = document.getElementById('joke');
 const jokeBtn = document.getElementById('jokeBtn');
 
-jokeBtn.addEventListener('click', generateJokes)
+jokeBtn.addEventListener('click', generateJokes);
 
-generateJokes()
+generateJokes();
 
 async function generateJokes(){
     const res = await fetch(
         "https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious"
     )
+    // console.log(res);
     const data = await res.json();
-    let joke = ""
+    let joke = "";
     if(data.joke == undefined){
-        joke = `${data.setup} <br /> ${data.delivery}` }
+        joke = `${data.setup} <br /> ${data.delivery}`; }
 
         else{
-            joke= data.joke
+            joke= data.joke;
         }
-
        jokeTxt.innerHTML = joke;
     }
+
+  // ---------------- FORM VALIDATION -----------
+  const form = document.querySelector('.cta-form');
+  const feedback = document.querySelector('.warning-name');
+  const feedback2 = document.querySelector('.warning-email');
+  const feedback3 = document.querySelector('.warning-subject');
+  const feedback4 = document.querySelector('.warning-message');
+
+
+  const namePattern = /^[a-zA-Z]{3,16}$/
+  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+
+
+  form.addEventListener('submit', e =>{
+
+    const fname = form.fname.value;
+    const email = form.email.value;
+    const subject = form.subject.value;
+    const message = form.message.value;
+    if(namePattern.test(fname)){
+      if(fname = "" ){
+        e.preventDefault();
+      } if(email=""){
+        e.preventDefault();
+      }
+      if(subject=""){
+        e.preventDefault();
+      }
+      if(message=""){
+        e.preventDefault();
+      }
+     }
+    else{
+      form.fname.setAttribute('class', 'error');
+      feedback.innerText = 'Full-name should be between 3 and 15 characters long!!!!';
+    }
+
+    if(emailPattern.test(email)){
+      if(email =""){
+        e.preventDefault();
+      }
+    }
+     else{
+       form.email.setAttribute('class', 'error');
+      feedback2.innerText = 'Please match pattern!!';
+
+    }
+    if(form.subject.value == ""){
+      e.preventDefault();
+      form.subject.setAttribute('class','error');
+      feedback3.innerText='Please choose an option';
+     console.log('error');
+  
+    } 
+      else{
+        form.subject.setAttribute('class', 'success');
+        console.log('success')
+      }
+      if(form.message.value == ""){
+        e.preventDefault();
+        form.message.setAttribute('class','error');
+        feedback4.innerText='Please write a feedback';
+    
+      } 
+        else{
+          form.message.setAttribute('class', 'success');
+          console.log('success')
+        }
+
+       
+   
+  });
+
+  form.fname.addEventListener('keyup', e=>{
+    if(namePattern.test(e.target.value)){
+        form.fname.setAttribute('class', 'success');
+        feedback.innerText = '';    
+
+
+      }
+    else{
+      form.fname.setAttribute('class', 'error');
+      feedback.innerText = 'Name should be between 3 and 15 characters long';    
+
+    }
+
+  });
+  form.email.addEventListener('keyup', e=>{
+ if(emailPattern.test(e.target.value)){
+      form.email.setAttribute('class', 'success');
+      feedback2.innerText = '';    
+
+    }
+    else{
+      form.email.setAttribute('class', 'error');
+    }
+   
+  });
+  form.subject.addEventListener('change', e=>{
+      if(form.subject.value == ""){
+        form.subject.setAttribute('class','error');
+        feedback3.innerText='Please choose an option';
+       console.log('error');
+    
+  } 
+  else{
+    form.subject.setAttribute('class', 'success');
+    feedback3.innerText="";
+    console.log('success')
+  }
+});
+form.message.addEventListener('keyup', e =>{
+  
+if(form.message.value == ""){
+  form.message.setAttribute('class','error');
+
+} 
+  else{
+    form.message.setAttribute('class', 'success');
+    feedback4.innerText='';
+
+  }
+})
